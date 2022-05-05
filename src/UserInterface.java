@@ -1,6 +1,12 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class UserInterface {
+
+  private double result;
+  private String state;
+  private double finalResult;
+  Scanner in = new Scanner(System.in);
 
   private Calculation calc;
 
@@ -18,8 +24,11 @@ public class UserInterface {
     int numbersOfItems = userInput.nextInt();
     System.out.println("Whats the price pr. unit?");
     double pricePrUnit = userInput.nextDouble();
+    result = calc.discountCalculator(numbersOfItems, pricePrUnit);
     System.out.println("Please type the state code. (Remember the statecode is a tow letter code).U can use following state-codes:\nUT\nNV\nTX\nAL\nCA");
-    double result = calc.discountCalculator(numbersOfItems, pricePrUnit);
+    state = in.nextLine().toUpperCase(Locale.ROOT);
+    finalResult = calc.stateCodeCalc(result, state);
+
   }
   public void calculator(){
 
