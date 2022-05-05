@@ -28,6 +28,7 @@ public class UserInterface {
     System.out.println("Please type the state code. (Remember the statecode is a tow letter code).U can use following state-codes:\nUT\nNV\nTX\nAL\nCA");
     state = in.nextLine().toUpperCase(Locale.ROOT);
     finalResult = calc.stateCodeCalc(result, state);
+    System.out.println(finalResult);
 
   }
   public void calculator(){
