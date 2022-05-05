@@ -14,6 +14,10 @@ public class UserInterface {
     double pricePrUnit = userInput.nextDouble();
     System.out.println("Please type the state code. (Remember the statecode is a tow letter code).U can use following state-codes:\nUT\nNV\nTX\nAL\nCA");
   }
+  public void calculator(){
+
+  }
+
 
 
 
