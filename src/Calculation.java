@@ -7,6 +7,16 @@ public class Calculation {
   public double discountCalculator(int units, double price) {
 
     double result = units * price;
+    if (result >= 1000 && result < 5000) {
+      result = result * 0.97;
+    } else if (result >= 5000 && result < 7000) {
+      result = result * 0.95;
+    } else if (result >= 7000 && result < 10000) {
+      result = result * 0.9;
+    } else if (result >= 10000 && result < 50000) {
+      result = result * 0.85;
+    }
+    return result;
     if (result) {
 
     }
