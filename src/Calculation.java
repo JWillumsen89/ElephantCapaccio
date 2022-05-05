@@ -17,12 +17,6 @@ public class Calculation {
       result = result * 0.85;
     }
     return result;
-    if (result) {
-
-    }
-
-
-    return result;
 
   }
 
